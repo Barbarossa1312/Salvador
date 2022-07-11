@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+/* @font-face {
+	font-family: 'Atyp';
+	src: url('/fonts/AtypDisplay-Bold.eot');
+	src: local('☺'), url('/fonts/AtypDisplay-Bold.woff') format('woff'), url('/fonts/AtypDisplay-Bold.ttf') format('truetype'), url('/fonts/AtypDisplay-Bold.svg') format('svg');
+	font-weight: 400;
+	font-style: Bold;} */
+
+/* font-family: 'Merriweather', serif; */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul[class],
+ol[class]{
+  list-style: none;
+  padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+ }
+
+ .wrapper{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+ }
+
+ [class*="_container"]{
+    /* Ограничение контентной части */
+    max-width: 1214px;
+    margin: 0px auto;
+ }
+ 
+/*-----Обнуление стилей------*/
+/*---------------------------*/
+.logo{
+    width: 194px;
+    height: 70px;
+}
+
+a{
+    color: #EBEBEB;
+}
+
+header{
+    background-color: #333333;
+    height: 100px;
+}
+
+.header_container{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: inherit;
+    gap: 78px;
+    font-family: 'Merriweather', serif;
+    font-size: 12px;
+}
+
+.header_button{
+    border: #FCC007 1px solid;
+    padding: 9px 40px;
+    border-radius: 79px;
+    font-size: 13px;
+    font-weight: 400;
+}
+/*---------------------------*/
+.main_about{
+    background-color: #1A1A1A;
+    height: 995px;
+}
+
+/* .main_about_container{
+    /* display: flex; */
+
+
+h1{
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 400;
+    font-size: 53px;
+    color: #FFFFFF;
+
+}
+
+h1 p{
+    text-align: left;
+    color: #FCC007;
+    font-size: 140px;
+    line-height: 131.5px;
+    
+}
+
+.main_about h2{
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+    padding: 21px 0 47px 0;
+
+}
+
+.ordered_button{
+    max-width: fit-content;
+    color: #1A1A1A;
+    background-color: #FCC007;
+    border: #FCC007 1px solid;
+    padding: 9px 50px;
+    border-radius: 79px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.main_about_article{
+    display: flex;
+}
+
+.main_about_article article{
+    display: flex;
+    flex-direction: column;
+    padding: 207px 0 0 0;
+    
+}
+
+.main_about_img{
+    padding: 130px 0 0 360px
+}
+
+/*---------------------------*/
+
+.main_why{
+    background-color: #DCDCDC;
+    height: 1200px;
+}
+
+.main_why_article{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.main_why_img{
+    padding: 176px 143px 0 0;
+}
+
+.main_why h2{
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    text-align: initial;
+    font-size: 48px;
+    line-height: 70px;
+    width: 240px;
+}
+
+.main_why_article p{
+    text-align: initial;
+    font-size: 16px;
+    line-height: 130%;
+    width: 356px;
+    padding: 12px 0 0 0;
+}
+
+.main_why_article article{
+    padding: 545px 395px 0 0;
+}
+
+/*---------------------------*/
+
+.main_benefits_container{
+    padding: 221px 0 222px 0;
+}
+
+.main_benefits_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main_benefits_flex li{
+    border: #1A1A1A 1px solid;
+    height: 235px;
+    width: 404px;
+}
+
+.li_black{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #1A1A1A;
+    font-size: 60px;
+    line-height: 130%;
+}
+
+/*---------------------------*/
+
+.main_production{
+    height: 1599px;
+    background-color: #DCDCDC;
+}
